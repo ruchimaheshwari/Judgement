@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Cambio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-UN-EKj" customClass="Card" customModule="Cambio">
+                                <rect key="frame" x="170.5" y="433" width="73" height="30"/>
+                                <state key="normal" title="Play Game"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Tkm-c2-nvX"/>
+                                    <action selector="onClick:" destination="wCK-JE-nkr" eventType="touchUpInside" id="hAn-v3-tCe"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2RW-K9-nLX">
+                                <rect key="frame" x="148" y="613" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Wpw-MI-gf8"/>
+                                    <constraint firstAttribute="height" constant="29" id="dQh-CT-usr"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BV1-FR-VrT" eventType="valueChanged" id="iWg-k7-lv2"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDj-7G-5dw">
+                                <rect key="frame" x="141" y="571" width="132" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-Q2-yFd">
+                                <rect key="frame" x="186" y="650" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0D6-dz-LFa">
+                                <rect key="frame" x="148" y="771" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changePlayers:" destination="BV1-FR-VrT" eventType="valueChanged" id="idC-hZ-ec4"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwi-dJ-xwY">
+                                <rect key="frame" x="186" y="822" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6V-4g-eNC">
+                                <rect key="frame" x="136" y="724" width="142" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QDj-7G-5dw" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="141" id="1j4-Kg-DWd"/>
+                            <constraint firstItem="QDj-7G-5dw" firstAttribute="top" secondItem="Ycw-UN-EKj" secondAttribute="bottom" constant="108" id="E62-0D-iRD"/>
+                            <constraint firstItem="Ycw-UN-EKj" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="MIM-IG-ZNF"/>
+                            <constraint firstItem="Ycw-UN-EKj" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="O8s-i2-EQ5"/>
+                            <constraint firstItem="2RW-K9-nLX" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="rN5-Nj-Axh"/>
+                            <constraint firstItem="2RW-K9-nLX" firstAttribute="top" secondItem="Ycw-UN-EKj" secondAttribute="bottom" constant="150" id="yDa-JH-Xwc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayCards" destination="3hc-Q2-yFd" id="q3d-9L-PVH"/>
+                        <outlet property="displayPlayers" destination="Pwi-dJ-xwY" id="4y1-vM-g4d"/>
+                        <outlet property="numCards" destination="2RW-K9-nLX" id="cdx-HB-OOS"/>
+                        <outlet property="numPlayers" destination="0D6-dz-LFa" id="gpY-CQ-QKU"/>
+                        <segue destination="mTv-Xe-V6E" kind="presentation" identifier="Changer" id="XdF-Ux-ybD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <exit id="wCK-JE-nkr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="883-Te-xOl">
+            <objects>
+                <viewController id="mTv-Xe-V6E" customClass="Player" customModule="Cambio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G5e-Iy-5BL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0yv-W8-L2D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZK-ze-fi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="88"/>
+        </scene>
+    </scenes>
+</document>
