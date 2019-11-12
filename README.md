@@ -1,8 +1,8 @@
-# calhacks2019
-Ruchi, Nitya, Preetham 
+# Judgement
+Created by Ruchi Maheshwari, Nitya Krishnakumar, and Preetham Sura at Cal Hacks 6.0.
 
-We created an iOS app using XCode of the game "Oh Hell!", also known as Judgement!
+We created a preliminary version of the hand-based card game Judgement, also known as "Oh Hell!", in an iOS app using XCode!
 
-Rules to play "Oh Hell!" are here: https://www.pagat.com/exact/ohhell.html
+Rules to play "Oh Hell!" can be found here: https://www.pagat.com/exact/ohhell.html
 
-To run the game, open the Cambio.xcodeproj file in XCode. Then create a new Assets.xcassets file with the 52 actual cards in the JPEG folder. After that, you should be good to play. Enjoy!
+To run the game, open the Judgement.xcodeproj file in XCode, run it, and enjoy!
